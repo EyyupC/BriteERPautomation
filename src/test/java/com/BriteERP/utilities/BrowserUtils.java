@@ -17,7 +17,7 @@ import java.util.List;
 
 import static org.testng.AssertJUnit.assertTrue;
 
-public class SeleniumUtils {
+public class BrowserUtils {
     /**
      *
      * @param expectedResult

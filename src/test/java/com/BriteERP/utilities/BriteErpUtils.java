@@ -26,7 +26,7 @@ public class BriteErpUtils {
         //Keys.ENTER means click enter after entering password
         //in this way, we don't need to click login button
         driver.findElement(By.cssSelector(passwordLocator)).sendKeys(password, Keys.ENTER);
-        SeleniumUtils.waitPlease(3);
+        BrowserUtils.waitPlease(3);
     }
 
     /**
@@ -42,7 +42,7 @@ public class BriteErpUtils {
         String tabLocator = "//span[contains(text(),\""+tab+"\") and contains(@class,\"oe_menu_text\")]";
         String moduleLocator = "//body//div//div//div//div//span[contains(text(),\""+module+"\")]";
 //        driver.findElement(By.xpath(tabLocator)).click();
-        SeleniumUtils.clickWithWait(driver, By.xpath(tabLocator), 5);
+        BrowserUtils.clickWithWait(driver, By.xpath(tabLocator), 5);
 //        SeleniumUtils.waitPlease(1);
         driver.findElement(By.xpath(moduleLocator)).click();
 
@@ -62,7 +62,7 @@ public class BriteErpUtils {
     public static void navigateToModule(String tab, String module) {
         String tabLocator = "//span[contains(text(),\""+tab+"\") and contains(@class,\"oe_menu_text\")]";
         String moduleLocator = "//body//div//div//div//div//span[contains(text(),\""+module+"\")]";
-        SeleniumUtils.clickWithWait(Driver.getDriver(), By.xpath(tabLocator), 5);
+        BrowserUtils.clickWithWait(Driver.getDriver(), By.xpath(tabLocator), 5);
         Driver.getDriver().findElement(By.xpath(moduleLocator)).click();
     }
 

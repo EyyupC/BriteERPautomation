@@ -69,7 +69,7 @@ public class TestBase {
 //                e.printStackTrace();
 //            }
             //if test failed get a screenshot and save the location to the image
-            String pathToTheScreenShot = SeleniumUtils.getScreenshot(result.getName());
+            String pathToTheScreenShot = BrowserUtils.getScreenshot(result.getName());
 
             extentLogger.fail(result.getName());
             try {
