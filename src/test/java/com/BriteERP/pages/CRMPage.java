@@ -1,5 +1,6 @@
 package com.BriteERP.pages;
 
+import com.BriteERP.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
